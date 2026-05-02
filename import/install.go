@@ -12,7 +12,7 @@ import (
 
 func main() {
 	// Database connection string for your remote PostgreSQL database
-	connStr := "postgres://username:password@remote-host:port/database?sslmode=disable"
+	connStr := "postgresql://neondb_owner:npg_WJ3RTZmpXFV6@ep-purple-queen-a1x67pb7-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 
 	// Open database connection
 	db, err := sql.Open("postgres", connStr)
